@@ -31,8 +31,8 @@ contract ArbOFT is OFT {
         SendParam memory sendParam = SendParam({
             dstEid: eId,
             to: bytes32(uint256(uint160(receiver))),
-            amountLD: amount * 10 ** decimals(),
-            minAmountLD: amount * 10 ** decimals(),
+            amountLD: amount,
+            minAmountLD: amount,
             extraOptions: _extraOptions,
             composeMsg: "",
             oftCmd: ""

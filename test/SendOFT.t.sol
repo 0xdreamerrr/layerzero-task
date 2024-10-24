@@ -33,7 +33,7 @@ contract SendOFT is TestHelperOz5 {
 
     address private userA = address(0x1);
     address private userB = address(0x2);
-    uint256 private initialBalance = 1000 ether;
+    uint256 private initialBalance = 5000 ether;
 
     uint32 private aEid = 1;
     uint32 private oEid = 2;
@@ -59,8 +59,8 @@ contract SendOFT is TestHelperOz5 {
             _deployOApp(type(OptOFT).creationCode, abi.encode("GL OPT", "GL", address(endpoints[oEid]), address(userB)))
         );
 
-        aOFT.mint(userA, initialBalance);
-        oOFT.mint(userB, initialBalance);
+        // aOFT.mint(userA, initialBalance);
+        // oOFT.mint(userB, initialBalance);
     }
 
 
