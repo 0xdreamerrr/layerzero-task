@@ -1,0 +1,23 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+remappings = [
+    '@layerzerolabs/oft-evm/=lib/devtools/packages/oft-evm/',
+    '@layerzerolabs/oapp-evm/=lib/devtools/packages/oapp-evm/',
+    '@layerzerolabs/lz-evm-protocol-v2/=lib/layerzero-v2/packages/layerzero-v2/evm/protocol',
+    'solidity-bytes-utils/=lib/solidity-bytes-utils/',
+    '@layerzerolabs/lz-evm-messagelib-v2=node_modules/@layerzerolabs/lz-evm-messagelib-v2',
+    '@layerzerolabs/lz-evm-v1-0.7=node_modules/@layerzerolabs/lz-evm-v1-0.7',
+    'devtools=lib/devtools'
+]
+
+[profile.rpc_url]
+ARB_URL = "$ARB_URL"
+OPT_URL = "$OPT_URL"
+
+[profile.private_key]
+PRIVATE_KEY = "$PRIVATE_KEY"
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

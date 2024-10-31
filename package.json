@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@layerzerolabs/lz-evm-messagelib-v2": "^3.0.6",
+    "@layerzerolabs/lz-evm-v1-0.7": "^3.0.6"
+  }
+}
